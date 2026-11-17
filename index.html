@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1426">
+  <meta name="description" content="خطة دراسية تفاعلية متسلسلة من Linux Administration إلى SOC Analyst L1 ثم L2، مع مصادر ومحاضرين ومدد وروابط وChecklist للتقدم.">
+  <title>Linux → SOC | خريطة المسار الدراسي</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark"><span>LS</span></div>
+        <div><strong>LINUX <span>→</span> SOC</strong><small>Learning Roadmap</small></div>
+      </div>
+      <div class="side-progress">
+        <div class="side-progress-head"><span>تقدم المسار</span><b id="sidePercent">0%</b></div>
+        <div class="progress-track"><i id="sideBar"></i></div>
+        <small id="sideCount">0 من 0 درس مكتمل</small>
+      </div>
+      <nav class="nav-list" id="phaseNav" aria-label="مراحل المسار"></nav>
+      <div class="sidebar-foot">
+        <span class="status-dot"></span>
+        <span>مسار شخصي قابل للتعديل</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="icon-btn mobile-menu" id="menuBtn" aria-label="القائمة">☰</button>
+        <div class="breadcrumb"><span>خطة التعلم</span><b>/</b><strong>Linux to SOC Analyst</strong></div>
+        <div class="top-actions">
+          <button class="btn btn-ghost" id="exportBtn">تصدير التقدم</button>
+          <label class="btn btn-ghost import-label">استيراد التقدم<input type="file" id="importInput" accept="application/json"></label>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> PERSONAL CYBERSECURITY ROADMAP</div>
+          <h1>من Linux إلى <span>SOC Analyst</span></h1>
+          <p>مسار واحد متسلسل. ننتقل بين المحاضرين حسب ترتيب المهارة، وليس حسب ترتيب القنوات، مع منع التكرار والتركيز على التطبيق العملي.</p>
+          <div class="hero-pills"><span>Linux Administration</span><span>Log Analysis</span><span>SIEM</span><span>MITRE ATT&CK</span><span>EDR</span><span>Incident Response</span></div>
+        </div>
+        <div class="hero-orbit" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit-core"><strong>LS</strong><small>PATH</small></div><span class="orbit-tag tag-linux">LINUX</span><span class="orbit-tag tag-siem">SIEM</span><span class="orbit-tag tag-edr">EDR</span></div>
+      </section>
+
+      <section class="stats-grid" aria-label="ملخص التقدم">
+        <article class="stat-card"><div class="stat-icon blue">▤</div><div><small>الخطوات المطلوبة في المسار</small><strong id="totalLessons">0</strong><span>ضمن المسار الأساسي</span></div></article>
+        <article class="stat-card"><div class="stat-icon cyan">✓</div><div><small>تم إنجازه</small><strong id="completedLessons">0</strong><span id="remainingLessons">باقي 0 خطوة</span></div></article>
+        <article class="stat-card"><div class="stat-icon violet">◷</div><div><small>مدة فيديوهات Linux</small><strong>30:33</strong><span>ساعة تقريبًا – دون اللابات</span></div></article>
+        <article class="stat-card"><div class="stat-icon amber">↗</div><div><small>معدل الدراسة المستهدف</small><strong>20+ <em>ساعة/أسبوع</em></strong><span>10–14 أسبوعًا إلى جاهزية L1 تقريبية</span></div></article>
+      </section>
+
+      <section class="progress-panel">
+        <div class="progress-main">
+          <div class="section-kicker">YOUR PROGRESS</div>
+          <div class="progress-title-row"><h2>إنجاز المسار بالكامل</h2><strong id="mainPercent">0%</strong></div>
+          <div class="progress-track big"><i id="mainBar"></i></div>
+          <div class="progress-meta"><span id="progressMessage">ابدأ بأول درس في المسار</span><span id="completeCount">0 / 0</span></div>
+        </div>
+        <div class="next-up" id="nextUp"><span class="next-label">الخطوة التالية</span><strong>Linux Fundamentals</strong><small>ابدأ من الدرس الأول</small></div>
+      </section>
+
+      <section class="sequence-note">
+        <div class="note-icon">↳</div>
+        <div><strong>الترتيب مقصود ومترابط</strong><p>ستجد محاضرات من الطناني ثم عبدالله النعيمي ثم Security Jordan في الموضع الذي تحتاجه فيه. الدروس المكررة تظهر كاختيارية أو في قسم المراجعة ولا تعطل تقدمك.</p></div>
+      </section>
+
+      <section class="timeline-strip"><div><b>تقدير الوصول إلى SOC L1</b><span>10–14 أسبوعًا تقريبًا مع الدراسة واللابات</span></div><i></i><div><b>التوسع إلى SOC L2</b><span>4–8 أسابيع إضافية للتخصص والتحقيق المتقدم</span></div></section>
+
+      <section class="toolbar">
+        <div class="toolbar-title"><div class="section-kicker">CURRICULUM</div><h2>محتوى المسار بالتسلسل</h2><p>حدد الدرس كمكتمل بعد المشاهدة والتطبيق، وليس بعد تشغيل الفيديو فقط.</p></div>
+        <div class="filters">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن درس أو محاضر أو أداة..."></label>
+          <select id="statusFilter" aria-label="تصفية حسب الحالة"><option value="all">كل الحالات</option><option value="todo">لم يبدأ</option><option value="done">مكتمل</option><option value="required">المطلوب فقط</option><option value="optional">اختياري / مراجعة</option></select>
+          <select id="instructorFilter" aria-label="تصفية حسب المحاضر"><option value="all">كل المحاضرين</option></select>
+        </div>
+      </section>
+
+      <section class="phase-summary" id="phaseSummary"></section>
+      <section class="lesson-list" id="lessonList" aria-live="polite"></section>
+
+      <section class="resources-panel">
+        <div class="resources-heading"><div><div class="section-kicker">REFERENCE LIBRARY</div><h2>مصادر إضافية ومكررة</h2><p>احتفظ بها للرجوع، لكن لا تجعلها عبئًا إضافيًا على الجدول الأساسي.</p></div><button class="btn btn-outline" id="toggleResources">عرض المصادر</button></div>
+        <div id="resourcesList" class="resource-list hidden"></div>
+      </section>
+
+      <section class="finish-panel">
+        <div class="finish-symbol">✦</div>
+        <div><h2>متى تعتبر نفسك جاهزًا؟</h2><p>عند إكمال الأساسيات وتنفيذ حالات SOC L1 باستقلالية، ثم بناء مشروع ختامي يثبت قدرتك على جمع الأدلة، وتحليلها، وربطها بـ MITRE، واستخدام SIEM وEDR، وكتابة تقرير حادث.</p></div>
+        <div class="finish-actions"><button id="resetBtn" class="btn btn-danger-ghost">إعادة ضبط التقدم</button></div>
+      </section>
+      <footer class="footer"><span>Linux → SOC Analyst Learning Path</span><span>Static site · GitHub & Vercel ready · Progress saved in this browser</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="curriculum.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
